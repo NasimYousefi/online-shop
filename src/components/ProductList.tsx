@@ -95,6 +95,7 @@ const ProductList: React.FC = () => {
         <div className="text-center py-8">
           <p className="text-xl text-custom-purple">No products found matching your criteria.</p>
         </div>
+        
       ) : (
         <div id="product-list" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProducts.map(product => (
