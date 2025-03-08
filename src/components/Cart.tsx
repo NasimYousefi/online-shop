@@ -3,6 +3,7 @@ import { useCart } from '../contexts/CartContext';
 import { XMarkIcon, PlusIcon, MinusIcon } from '@heroicons/react/24/solid';
 import { Link } from 'react-router-dom';
 
+
 const Cart: React.FC = () => {
   const { cart, removeFromCart, updateQuantity, getCartTotal, clearCart } = useCart();
   const [isCheckingOut, setIsCheckingOut] = useState(false);
