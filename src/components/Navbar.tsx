@@ -12,6 +12,7 @@ const Navbar: React.FC<NavbarProps> = ({ userName }) => {
   const { getTotalItems } = useCart();
 
   return (
+    
     <header className="bg-custom-purple-200 py-4">
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center space-x-4">
