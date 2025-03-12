@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShoppingCartIcon } from '@heroicons/react/24/solid';
+// import { ShoppingCartIcon } from '@heroicons/react/24/solid';
 import { useCart } from '../contexts/CartContext';
 import Logo from './Logo';
 
@@ -36,7 +36,9 @@ const Navbar: React.FC<NavbarProps> = ({ userName }) => {
         </div>
         
         <div className="cart-container flex items-center">
-          <span className="cart-label mr-2 text-custom-dark-blue">Cart</span>
+          <span className="cart-label mr-2 text-custom-dark-blue">Cart
+          {/* <ShoppingCartIcon className="w-8 h-8 text-custom-dark-blue" /> */}
+          </span>
           <Link to="/cart" className="cart-count bg-custom-purple text-white rounded-full px-3 py-1 hover:bg-custom-dark-blue">
             {getTotalItems()}
           </Link>

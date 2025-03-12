@@ -11,7 +11,7 @@ import { User } from './types';
 const App: React.FC = () => {
   const [userName, setUserName] = useState<string>('');
   const [showNameModal, setShowNameModal] = useState<boolean>(true);
-  const [user, setUser] = useState<User | null>(null);
+  const [, setUser] = useState<User | null>(null);
 
   useEffect(() => {
     // Check for saved username
